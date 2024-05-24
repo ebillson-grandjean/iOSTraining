@@ -107,7 +107,7 @@ class Calculation {
     }
     
     func displayResult() {
-        print("Result: \(result)")
+        print("Result: \(String(describing: result))")
     }
 }
 
@@ -148,7 +148,7 @@ class Professional: Person {
 }
 
 let proObj = Professional(age: 27, name: "Ebillson", sex: "M", isDeveloper: true, salary: 250000.00)
-print(proObj.name)
+print(proObj.name!)
 
 
 //V- Method Overloading
