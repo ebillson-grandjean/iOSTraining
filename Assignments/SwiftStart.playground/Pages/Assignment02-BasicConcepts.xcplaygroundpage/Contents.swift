@@ -203,4 +203,31 @@ print(greet(person: "Tim", alreadyGreeted: true))
 printDashes(n: dashesCount, hasNewLine: false)
 
 
+class User {
+    // Stored property
+    var name: String
+    var sex: Character
+    
+    init(name: String, sex: Character){
+        self.name = name
+        self.sex = sex
+    }
+    
+    // Computed property
+    var description : String {
+        "Name is: \(name) and sex is: \(sex)"
+    }
+    
+}
+
+
+func createUsers() -> User {
+    
+    return User(name: "Bhushan", sex: "M")
+    
+}
+
+let user = createUsers()
+
+print(user.description)
 
