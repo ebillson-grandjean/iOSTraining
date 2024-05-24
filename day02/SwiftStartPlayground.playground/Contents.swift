@@ -190,8 +190,6 @@ func sayHelloWorld(){
 sayHelloWorld()
 
 // With multiple params
-
-
 func greet(person: String, alreadyGreeted: Bool) -> String {
     if alreadyGreeted {
         return greetAgain(person: person)
@@ -199,7 +197,10 @@ func greet(person: String, alreadyGreeted: Bool) -> String {
         return greet(person: person)
     }
 }
+
 print(greet(person: "Tim", alreadyGreeted: true))
+
+printDashes(n: dashesCount, hasNewLine: false)
 
 
 
