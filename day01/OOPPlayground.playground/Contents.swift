@@ -206,3 +206,8 @@ player1.play()
 
 let player2 = SoccerPlayer(name: "Messi")
 player2.play()
+
+
+let name: String
+
+name = "Bhushan"
