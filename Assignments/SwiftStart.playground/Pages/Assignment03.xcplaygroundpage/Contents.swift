@@ -47,6 +47,17 @@ if let starPath = imagePaths["star"] {
     print("Couldn't find the star image")
 }
 
+// Nil Coalescing example
+
+let name: String? = nil
+let unwrappedName = name ?? "Anonymous"
+
+// Because name is an optional string, we need to unwrap it safely to ensure it has a meaningful value. The nil coalescing operator – ?? – does exactly that, but if it finds the optional has no value then it uses a default instead. In this case, the default is "Anonymous". What this means is that unwrappedName has the data type String rather than String? because it can be guaranteed to have a value.
+
+//You don't need to create a separate variable to use nil coalescing. For example, this works fine too:
+
+print("Hello, \(name ?? "Anonymous")!")
+
 
 //3. Optional Chaining
 
@@ -144,3 +155,30 @@ stack.pop()
 stack.items // [4]
 
 print(stack)
+
+
+
+
+/*
+ 
+ Struct vs Classes
+ 
+ 1. Classes support inheritance, Struct doesn't
+ 2. Classes are reference types
+ 3. Structs are value types
+ 4. Classes get stored on heap memory, structs get stored on stack memory
+ 5. Classes share memory location, struct doesn't
+ 6. Structs are immutable by default
+ 7. Classes need initializers whereas Structs came with built-in initializers called as members initializer
+ 8. Structs are faster compared to classes
+ 
+ 
+ 
+ When to use
+ 1. Classes
+ 
+ When u want in
+ 
+ 
+ 
+ */

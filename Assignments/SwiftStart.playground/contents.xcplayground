@@ -4,5 +4,7 @@
         <page name='Assignment01-OOPConcepts'/>
         <page name='Assignment02-BasicConcepts'/>
         <page name='Assignment03'/>
+        <page name='Day04-Enum'/>
+        <page name='Day04-Initializers'/>
     </pages>
 </playground>
