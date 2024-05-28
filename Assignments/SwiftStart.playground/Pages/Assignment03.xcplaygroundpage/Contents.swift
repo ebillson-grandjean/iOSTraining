@@ -61,27 +61,43 @@ if imagePaths["star"]?.hasSuffix(".png") == true {
 
 //5. Classes and inheritance and initializers for it
 
-//The following example defines a class called SurveyQuestion, with an optional String property called response:
-
-
-class SurveyQuestion {
-    let text: String
-    var response: String?
-    init(text: String) {
-        self.text = text
+class Player {
+    
+    let name: String
+    init(name: String) {
+        self.name = name;
     }
-    func ask() {
-        print(text)
+    
+    func play(){}
+}
+
+class BasketballPlayer: Player {
+    override func play() {
+        playingBasketBall()
+    }
+    
+    func playingBasketBall(){
+        print("\(name) is playing basketball")
     }
 }
 
-let beetsQuestion = SurveyQuestion(text: "How about beets?")
-beetsQuestion.ask()
-// Prints "How about beets?"
-beetsQuestion.response = "I also like beets. (But not with cheese.)"
+
+class SoccerPlayer: Player {
+    override func play() {
+        playingSoccer()
+    }
+    
+    func playingSoccer() {
+        print("\(name) is playing soccer")
+    }
+}
 
 
+let player1 = BasketballPlayer(name: "Curry")
+player1.play()
 
+let player2 = SoccerPlayer(name: "Messi")
+player2.play()
 
 
 //6. Structs and initialisers for it
