@@ -8,5 +8,9 @@
         <page name='Assignment04-part1'/>
         <page name='Day04-Initializers'/>
         <page name='Assignment04-part2'/>
+        <page name='Day05-Protocols'/>
+        <page name='Day05-Extension'/>
+        <page name='Assignment05'/>
+        <page name='Day05-Closures'/>
     </pages>
 </playground>
