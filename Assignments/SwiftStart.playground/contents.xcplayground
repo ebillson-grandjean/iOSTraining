@@ -12,5 +12,12 @@
         <page name='Day05-Extension'/>
         <page name='Assignment05'/>
         <page name='Day05-Closures'/>
+        <page name='Day06-Closures'/>
+        <page name='Day06-TypesOfProperties'/>
+        <page name='Day06-HigherOrderFunctions'/>
+        <page name='Live Coding'/>
+        <page name='Assignment06'/>
+        <page name='Day07-MemoryManagement'/>
+        <page name='Day07-Generics'/>
     </pages>
 </playground>
