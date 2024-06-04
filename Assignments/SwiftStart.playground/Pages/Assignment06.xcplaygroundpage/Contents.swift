@@ -97,8 +97,8 @@ let closure = { [a] in
 closure()
 
 
-a = 10
-b = 10
+a = 5
+b = 20
 closure()
 
 //3.Higher order funtions
@@ -143,3 +143,8 @@ print(combined)
 
 
 
+let myArr = [1, 2, 4, 5]
+
+let descArr = myArr.sorted{ $0 > $1}
+
+print(descArr)

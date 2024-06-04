@@ -81,7 +81,7 @@ class Information<T> {
 
 
 let information = Information(data: "iOS")
-print(" \(information.getMyData())")
+print("My data is: \(information.getMyData())")
 
 
 

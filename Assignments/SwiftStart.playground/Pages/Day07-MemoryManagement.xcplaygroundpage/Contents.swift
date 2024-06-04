@@ -101,3 +101,44 @@ var c1: Car? = Car(type: "Electric", brand: "Tesla", owner: p1)
 p1?.vehicle = c1
 
 
+
+class Airport {
+    
+    var name: String
+    var someID: Int
+    
+    
+    init(name: String, someID: Int) {
+        self.name = name
+        self.someID = someID
+    }
+    
+}
+
+// retain count = 0
+var airport1: Airport? = Airport(name: "ATL", someID: 1) // 0 + 1 = 1 => increment by 1
+airport1 = nil // 1 - 1 = 0 // decrement by 1
+
+// when retain count = 0 => ARC frees memory
+
+//0
+var nycAirport:Airport? = Airport(name: "NYC", someID: 2) // 0 + 1 = 1
+var denverAirport = nycAirport // 1 + 1 = 2
+
+// if denverAirport is declared as =>
+//weak denverAirport = nycAirport => no increment => 1 = 1
+
+// if denverAirport is declared as =>
+// unowned denverAirport = nycAirport
+// when it is set to nil and when trying to access a property like denverAirport.name, a crash is gonna occur
+// if the var is not unowned since the var is optional, there will have no crash
+// See below example in line after nil
+
+nycAirport = nil // 2 - 1 = 1
+denverAirport = nil // 1 - 1 = 0
+
+// retain count = 0 => memory freed
+// when it is set to nil and when trying to access a property like denverAirport.name, a crash is gonna occur
+// if the var is not unowned since the var is optional, there will have no crash
+print(denverAirport?.name)
+

@@ -19,5 +19,10 @@
         <page name='Assignment06'/>
         <page name='Day07-MemoryManagement'/>
         <page name='Day07-Generics'/>
+        <page name='Assignment07'/>
+        <page name='Day08-AssociatedType'/>
+        <page name='Day08-ErrorHandling'/>
+        <page name='Day08-DependencyInjection'/>
+        <page name='Assignment08'/>
     </pages>
 </playground>
