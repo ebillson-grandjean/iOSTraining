@@ -84,3 +84,65 @@ do {
     }
 }
 
+
+
+// creating a custom error
+
+enum APIError:Error{
+    case invalidUrl
+    case requestFailed
+    case httpError(code: Int)
+    case unknown
+}
+
+
+func fetchDataFromAPI(urlString: String, completionHandler: @escaping (Result<Data, APIError>) -> Void){
+    
+    guard let url = URL(string: urlString) else {
+        completionHandler(.failure(.invalidUrl))
+        return
+    }
+    
+    print(url)
+    
+    let dataTask = URLSession.shared.dataTask(with: url) { data, response, error in
+        
+        print("Inside Closure")
+        
+        if let error = error {
+            completionHandler(.failure(.requestFailed))
+            return
+        }
+        
+        if let response = response as? HTTPURLResponse {
+            if response.statusCode < 200 || response.statusCode > 299 {
+                completionHandler(.failure(.httpError(code: response.statusCode)))
+                return
+            }
+        }
+        
+        guard let data = data else {
+            completionHandler(.failure(.unknown))
+            return
+        }
+        completionHandler(.success(data))
+    }
+    dataTask.resume()
+    print("End of API Call function")
+}
+
+
+fetchDataFromAPI(urlString: "https://data.cityofnewyork.us/resource/s3k6-pzi2.json") { result in
+    
+    switch result {
+        
+    case .success(let receivedData):
+        print(receivedData)
+    case .failure(let error):
+        print(error.localizedDescription)
+    }
+    
+}
+
+
+print("End of code")

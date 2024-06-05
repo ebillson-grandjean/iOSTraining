@@ -173,6 +173,3 @@ stackOfString.push("!")
 print(stackOfString)
 stackOfString.pop()
 print(stackOfString)
-
-
-

@@ -31,23 +31,24 @@ protocol Stack {
 }
 
 
-struct GenericStack<T> {
+struct GenericStackInt:Stack{
     
-    private var items:[T] = []
+    typealias Element = Int
+    private var items:[Element] = []
     
     
-    mutating func push(_ element: T){
+    mutating func push(_ element: Element){
         items.append(element)
     }
     
-    mutating func pop() -> T? {
+    mutating func pop() -> Element? {
         return items.popLast()
     }
     
 }
 
 
-var stackOfInts = GenericStack<Int>()
+var stackOfInts = GenericStackInt()
 stackOfInts.push(1)
 stackOfInts.push(3)
 stackOfInts.push(4)
@@ -61,6 +62,33 @@ stackOfInts.pop()
 
 print(stackOfInts)
 
+
+struct GenericStackString:Stack {
+    
+    typealias Element = String
+    var items: [Element] = []
+    
+    mutating func push(_ element: String) {
+        items.append(element)
+    }
+    
+    mutating func pop() -> String? {
+        items.popLast()
+    }
+    
+}
+
+var stackOfStrings = GenericStackString()
+
+stackOfStrings.push("Ebillson")
+stackOfStrings.push("Bill")
+stackOfStrings.push("Ebill")
+
+print(stackOfStrings)
+
+stackOfStrings.pop()
+
+print(stackOfStrings)
 
 
 //2.Error handling in iOS
@@ -104,9 +132,12 @@ func createRequest(from url: String) throws -> String{
     return "Request was created successfully"
 }
 
+// I think it froze up again
 
 do {
     let request = try createRequest(from: "https://someurl.com")
+//    let request = try createRequest(from: "https://someurl.com")
+//    let request = try createRequest(from: "https://someurl.com")
     print(request)
 }catch{
     switch error {

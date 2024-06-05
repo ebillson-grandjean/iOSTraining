@@ -78,6 +78,7 @@ doAddition(value: 3) {
 }
 
 
+
 //4. Autoclosure - when a closure gets automatically wrapped in a closure and doesn't return any parameter nor return any parameter
 
 func greetPeople(wishThem: () -> ()){
@@ -94,3 +95,18 @@ greetPeople {
 
 // Closures are reference types, they are stored on the heap memory
 
+class Vehicle {
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func displayInfo(){
+        let closure = { [weak self] in // The weak keyword tells the ARC to not increase the retain count by 1
+            // weak self is needed when in a class
+            print("Vehicle is \(self?.name ?? "" )")
+            
+        }
+    }
+}
