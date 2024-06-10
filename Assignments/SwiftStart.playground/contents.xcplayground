@@ -26,5 +26,16 @@
         <page name='Assignment08'/>
         <page name='Day09-DependencyInversion'/>
         <page name='Assingment09'/>
+        <page name='Day10-COW-CopyOnWrite'/>
+        <page name='Day11-Multithreading-GCD'/>
+        <page name='Day11-CustomQueues'/>
+        <page name='Assignment10'/>
+        <page name='Day11-GlobalQueues'/>
+        <page name='Day11-OperationQueue'/>
+        <page name='Assignment11'/>
+        <page name='Day12-1-DispatchGroup'/>
+        <page name='Day12-2-AsyncAwait'/>
+        <page name='Day12-3-Actor'/>
+        <page name='Assignment12'/>
     </pages>
 </playground>
