@@ -20,9 +20,9 @@
 		F17A1A832C18756F001034CF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F17A1A822C18756F001034CF /* Base */; };
 		F17A1A852C187571001034CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17A1A842C187571001034CF /* Assets.xcassets */; };
 		F17A1A882C187571001034CF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F17A1A872C187571001034CF /* Base */; };
-		F17A1A932C187571001034CF /* Day15Part2MVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A1A922C187571001034CF /* Day15Part2MVCTests.swift */; };
-		F17A1A9D2C187571001034CF /* Day15Part2MVCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A1A9C2C187571001034CF /* Day15Part2MVCUITests.swift */; };
-		F17A1A9F2C187571001034CF /* Day15Part2MVCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A1A9E2C187571001034CF /* Day15Part2MVCUITestsLaunchTests.swift */; };
+		F17A1A932C187571001034CF /* Assigment16MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A1A922C187571001034CF /* Assigment16MVVMTests.swift */; };
+		F17A1A9D2C187571001034CF /* Assigment16MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A1A9C2C187571001034CF /* Assigment16MVVMUITests.swift */; };
+		F17A1A9F2C187571001034CF /* Assigment16MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A1A9E2C187571001034CF /* Assigment16MVVMUITestsLaunchTests.swift */; };
 		F17A1AB42C1967F5001034CF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A1AB32C1967F5001034CF /* ListViewController.swift */; };
 		F17D74862C1AC11D005030B9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17D74852C1AC11D005030B9 /* MenuViewController.swift */; };
 		F17D74882C1ACB84005030B9 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17D74872C1ACB84005030B9 /* GridViewController.swift */; };
@@ -57,7 +57,7 @@
 		F141E56D2C1C55EC004B83E9 /* ProductData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
 		F141E56F2C1C5690004B83E9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F172620C2C19D3D4004E74F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F17A1A782C18756F001034CF /* Day15Part2MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day15Part2MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17A1A782C18756F001034CF /* Assigment16MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assigment16MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17A1A7B2C18756F001034CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F17A1A7D2C18756F001034CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F17A1A7F2C18756F001034CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,11 +65,11 @@
 		F17A1A842C187571001034CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F17A1A872C187571001034CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F17A1A892C187571001034CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F17A1A8E2C187571001034CF /* Day15Part2MVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day15Part2MVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F17A1A922C187571001034CF /* Day15Part2MVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15Part2MVCTests.swift; sourceTree = "<group>"; };
-		F17A1A982C187571001034CF /* Day15Part2MVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day15Part2MVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F17A1A9C2C187571001034CF /* Day15Part2MVCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15Part2MVCUITests.swift; sourceTree = "<group>"; };
-		F17A1A9E2C187571001034CF /* Day15Part2MVCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15Part2MVCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F17A1A8E2C187571001034CF /* Assigment16MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assigment16MVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17A1A922C187571001034CF /* Assigment16MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assigment16MVVMTests.swift; sourceTree = "<group>"; };
+		F17A1A982C187571001034CF /* Assigment16MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assigment16MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17A1A9C2C187571001034CF /* Assigment16MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assigment16MVVMUITests.swift; sourceTree = "<group>"; };
+		F17A1A9E2C187571001034CF /* Assigment16MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assigment16MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F17A1AB32C1967F5001034CF /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		F17D74852C1AC11D005030B9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F17D74872C1ACB84005030B9 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
@@ -145,9 +145,9 @@
 		F17A1A6F2C18756F001034CF = {
 			isa = PBXGroup;
 			children = (
-				F17A1A7A2C18756F001034CF /* Day15Part2MVC */,
-				F17A1A912C187571001034CF /* Day15Part2MVCTests */,
-				F17A1A9B2C187571001034CF /* Day15Part2MVCUITests */,
+				F17A1A7A2C18756F001034CF /* Assigment16MVVM */,
+				F17A1A912C187571001034CF /* Assigment16MVVMTests */,
+				F17A1A9B2C187571001034CF /* Assigment16MVVMUITests */,
 				F17A1A792C18756F001034CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,14 +155,14 @@
 		F17A1A792C18756F001034CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F17A1A782C18756F001034CF /* Day15Part2MVC.app */,
-				F17A1A8E2C187571001034CF /* Day15Part2MVCTests.xctest */,
-				F17A1A982C187571001034CF /* Day15Part2MVCUITests.xctest */,
+				F17A1A782C18756F001034CF /* Assigment16MVVM.app */,
+				F17A1A8E2C187571001034CF /* Assigment16MVVMTests.xctest */,
+				F17A1A982C187571001034CF /* Assigment16MVVMUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F17A1A7A2C18756F001034CF /* Day15Part2MVC */ = {
+		F17A1A7A2C18756F001034CF /* Assigment16MVVM */ = {
 			isa = PBXGroup;
 			children = (
 				F141E5682C1B42A7004B83E9 /* ViewModel */,
@@ -181,32 +181,32 @@
 				F17D748C2C1AE1A1005030B9 /* CustomTableViewCell.xib */,
 				F17D748F2C1AF5E6005030B9 /* GridCollectionViewCell.swift */,
 			);
-			path = Day15Part2MVC;
+			path = Assigment16MVVM;
 			sourceTree = "<group>";
 		};
-		F17A1A912C187571001034CF /* Day15Part2MVCTests */ = {
+		F17A1A912C187571001034CF /* Assigment16MVVMTests */ = {
 			isa = PBXGroup;
 			children = (
-				F17A1A922C187571001034CF /* Day15Part2MVCTests.swift */,
+				F17A1A922C187571001034CF /* Assigment16MVVMTests.swift */,
 			);
-			path = Day15Part2MVCTests;
+			path = Assigment16MVVMTests;
 			sourceTree = "<group>";
 		};
-		F17A1A9B2C187571001034CF /* Day15Part2MVCUITests */ = {
+		F17A1A9B2C187571001034CF /* Assigment16MVVMUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F17A1A9C2C187571001034CF /* Day15Part2MVCUITests.swift */,
-				F17A1A9E2C187571001034CF /* Day15Part2MVCUITestsLaunchTests.swift */,
+				F17A1A9C2C187571001034CF /* Assigment16MVVMUITests.swift */,
+				F17A1A9E2C187571001034CF /* Assigment16MVVMUITestsLaunchTests.swift */,
 			);
-			path = Day15Part2MVCUITests;
+			path = Assigment16MVVMUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F17A1A772C18756F001034CF /* Day15Part2MVC */ = {
+		F17A1A772C18756F001034CF /* Assigment16MVVM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F17A1AA22C187571001034CF /* Build configuration list for PBXNativeTarget "Day15Part2MVC" */;
+			buildConfigurationList = F17A1AA22C187571001034CF /* Build configuration list for PBXNativeTarget "Assigment16MVVM" */;
 			buildPhases = (
 				F17A1A742C18756F001034CF /* Sources */,
 				F17A1A752C18756F001034CF /* Frameworks */,
@@ -216,14 +216,14 @@
 			);
 			dependencies = (
 			);
-			name = Day15Part2MVC;
+			name = Assigment16MVVM;
 			productName = Assignment13;
-			productReference = F17A1A782C18756F001034CF /* Day15Part2MVC.app */;
+			productReference = F17A1A782C18756F001034CF /* Assigment16MVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F17A1A8D2C187571001034CF /* Day15Part2MVCTests */ = {
+		F17A1A8D2C187571001034CF /* Assigment16MVVMTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F17A1AA52C187571001034CF /* Build configuration list for PBXNativeTarget "Day15Part2MVCTests" */;
+			buildConfigurationList = F17A1AA52C187571001034CF /* Build configuration list for PBXNativeTarget "Assigment16MVVMTests" */;
 			buildPhases = (
 				F17A1A8A2C187571001034CF /* Sources */,
 				F17A1A8B2C187571001034CF /* Frameworks */,
@@ -234,14 +234,14 @@
 			dependencies = (
 				F17A1A902C187571001034CF /* PBXTargetDependency */,
 			);
-			name = Day15Part2MVCTests;
+			name = Assigment16MVVMTests;
 			productName = Assignment13Tests;
-			productReference = F17A1A8E2C187571001034CF /* Day15Part2MVCTests.xctest */;
+			productReference = F17A1A8E2C187571001034CF /* Assigment16MVVMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F17A1A972C187571001034CF /* Day15Part2MVCUITests */ = {
+		F17A1A972C187571001034CF /* Assigment16MVVMUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F17A1AA82C187571001034CF /* Build configuration list for PBXNativeTarget "Day15Part2MVCUITests" */;
+			buildConfigurationList = F17A1AA82C187571001034CF /* Build configuration list for PBXNativeTarget "Assigment16MVVMUITests" */;
 			buildPhases = (
 				F17A1A942C187571001034CF /* Sources */,
 				F17A1A952C187571001034CF /* Frameworks */,
@@ -252,9 +252,9 @@
 			dependencies = (
 				F17A1A9A2C187571001034CF /* PBXTargetDependency */,
 			);
-			name = Day15Part2MVCUITests;
+			name = Assigment16MVVMUITests;
 			productName = Assignment13UITests;
-			productReference = F17A1A982C187571001034CF /* Day15Part2MVCUITests.xctest */;
+			productReference = F17A1A982C187571001034CF /* Assigment16MVVMUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -293,9 +293,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F17A1A772C18756F001034CF /* Day15Part2MVC */,
-				F17A1A8D2C187571001034CF /* Day15Part2MVCTests */,
-				F17A1A972C187571001034CF /* Day15Part2MVCUITests */,
+				F17A1A772C18756F001034CF /* Assigment16MVVM */,
+				F17A1A8D2C187571001034CF /* Assigment16MVVMTests */,
+				F17A1A972C187571001034CF /* Assigment16MVVMUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -356,7 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17A1A932C187571001034CF /* Day15Part2MVCTests.swift in Sources */,
+				F17A1A932C187571001034CF /* Assigment16MVVMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,8 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17A1A9D2C187571001034CF /* Day15Part2MVCUITests.swift in Sources */,
-				F17A1A9F2C187571001034CF /* Day15Part2MVCUITestsLaunchTests.swift in Sources */,
+				F17A1A9D2C187571001034CF /* Assigment16MVVMUITests.swift in Sources */,
+				F17A1A9F2C187571001034CF /* Assigment16MVVMUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,12 +374,12 @@
 /* Begin PBXTargetDependency section */
 		F17A1A902C187571001034CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F17A1A772C18756F001034CF /* Day15Part2MVC */;
+			target = F17A1A772C18756F001034CF /* Assigment16MVVM */;
 			targetProxy = F17A1A8F2C187571001034CF /* PBXContainerItemProxy */;
 		};
 		F17A1A9A2C187571001034CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F17A1A772C18756F001034CF /* Day15Part2MVC */;
+			target = F17A1A772C18756F001034CF /* Assigment16MVVM */;
 			targetProxy = F17A1A992C187571001034CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -531,7 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Day15Part2MVC/Info.plist;
+				INFOPLIST_FILE = Assigment16MVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -542,7 +542,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day15Part2MVC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Assigment16MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -558,7 +558,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Day15Part2MVC/Info.plist;
+				INFOPLIST_FILE = Assigment16MVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -569,7 +569,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day15Part2MVC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Assigment16MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -623,7 +623,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Assignment13UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Assigment16MVVMUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -640,7 +640,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Assignment13UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Assigment16MVVMUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -661,7 +661,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F17A1AA22C187571001034CF /* Build configuration list for PBXNativeTarget "Day15Part2MVC" */ = {
+		F17A1AA22C187571001034CF /* Build configuration list for PBXNativeTarget "Assigment16MVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F17A1AA32C187571001034CF /* Debug */,
@@ -670,7 +670,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F17A1AA52C187571001034CF /* Build configuration list for PBXNativeTarget "Day15Part2MVCTests" */ = {
+		F17A1AA52C187571001034CF /* Build configuration list for PBXNativeTarget "Assigment16MVVMTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F17A1AA62C187571001034CF /* Debug */,
@@ -679,7 +679,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F17A1AA82C187571001034CF /* Build configuration list for PBXNativeTarget "Day15Part2MVCUITests" */ = {
+		F17A1AA82C187571001034CF /* Build configuration list for PBXNativeTarget "Assigment16MVVMUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F17A1AA92C187571001034CF /* Debug */,

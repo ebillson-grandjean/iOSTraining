@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class Day15Part2MVCUITestsLaunchTests: XCTestCase {
+final class Assigment16MVVMUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
