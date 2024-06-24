@@ -18,6 +18,7 @@ class ListViewController: UIViewController {
     var cities = ["New York City", "San Francisco", "Los Angeles", "Seattle", "Miami", "Paris", "London", "Barcelona", "Dubai", "Tokyo", "Shangai", "Kigali", "Mexico", "Port-au-Prince", "Cap-Haitien", "Toronto", "Athens", "Manchester"]
     
     var countries = ["United States of America", "United Kingdom", "Canada", "Haiti", "Rwanda", "Nigeria", "Spain", "Mexico", "Bahamas", "Brazil", "Greece", "Japan", "China"]
+    
     @IBOutlet weak var tableView: UITableView!
     
     let listViewModel = ListViewModel()
@@ -88,7 +89,7 @@ extension ListViewController: UITableViewDataSource {
             cell.nameLabel?.text = data
             return cell
         case 1:
-            return self.tableViewForMonths(tableView, cellForRowAt: indexPath)
+            return self.tableViewForCountries(tableView, cellForRowAt: indexPath)
         default:
             return self.tableViewForProduct(tableView, cellForRowAt: indexPath)
             
@@ -121,8 +122,9 @@ extension ListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView(frame: CGRect(x: 10, y: 5, width: 200, height: 30))
-        let label = UILabel(frame: CGRect(x: 15, y: 0, width: 180, height: 20))
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+        let label = UILabel(frame: CGRect(x: 0, y: 15, width: 200, height: 20))
+        label.textAlignment = .center
         headerView.addSubview(label)
         headerView.backgroundColor = .tintColor
         label.textColor = .white
@@ -135,17 +137,17 @@ extension ListViewController: UITableViewDataSource {
         default:
             label.text = "Products"
         }
-//        if section == 0 {
-//            label.text = "Cities"
-//        } else {
-//            label.text = "Countries"
-//        }
         
         return headerView
     }
     
     
-    func tableViewForMonths(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
+    
+    func tableViewForCountries(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCellID", for: indexPath) as! CustomTableViewCell
        
         let data = countries[indexPath.row]

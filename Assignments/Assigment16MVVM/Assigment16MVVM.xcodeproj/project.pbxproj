@@ -13,6 +13,7 @@
 		F141E56C2C1B432B004B83E9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141E56B2C1B432B004B83E9 /* LoginViewModel.swift */; };
 		F141E56E2C1C55EC004B83E9 /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = F141E56D2C1C55EC004B83E9 /* ProductData.json */; };
 		F141E5702C1C5690004B83E9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141E56F2C1C5690004B83E9 /* Product.swift */; };
+		F141E5BD2C1FEB75004B83E9 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141E5BC2C1FEB75004B83E9 /* APIConstants.swift */; };
 		F172620D2C19D3D4004E74F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172620C2C19D3D4004E74F1 /* LoginViewController.swift */; };
 		F17A1A7C2C18756F001034CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A1A7B2C18756F001034CF /* AppDelegate.swift */; };
 		F17A1A7E2C18756F001034CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A1A7D2C18756F001034CF /* SceneDelegate.swift */; };
@@ -56,6 +57,7 @@
 		F141E56B2C1B432B004B83E9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F141E56D2C1C55EC004B83E9 /* ProductData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
 		F141E56F2C1C5690004B83E9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F141E5BC2C1FEB75004B83E9 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		F172620C2C19D3D4004E74F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F17A1A782C18756F001034CF /* Assigment16MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assigment16MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17A1A7B2C18756F001034CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F141E5BB2C1FEB52004B83E9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F141E5BC2C1FEB75004B83E9 /* APIConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		F17A1A6F2C18756F001034CF = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +175,7 @@
 		F17A1A7A2C18756F001034CF /* Assigment16MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				F141E5BB2C1FEB52004B83E9 /* Constants */,
 				F141E5682C1B42A7004B83E9 /* ViewModel */,
 				F141E5672C1B4292004B83E9 /* View */,
 				F141E5612C1B4035004B83E9 /* Model */,
@@ -346,6 +357,7 @@
 				F141E56C2C1B432B004B83E9 /* LoginViewModel.swift in Sources */,
 				F17A1AB42C1967F5001034CF /* ListViewController.swift in Sources */,
 				F172620D2C19D3D4004E74F1 /* LoginViewController.swift in Sources */,
+				F141E5BD2C1FEB75004B83E9 /* APIConstants.swift in Sources */,
 				F17A1A7E2C18756F001034CF /* SceneDelegate.swift in Sources */,
 				F141E5652C1B40FA004B83E9 /* User.swift in Sources */,
 				F141E5702C1C5690004B83E9 /* Product.swift in Sources */,
