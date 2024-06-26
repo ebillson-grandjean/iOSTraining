@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1A304202C2B0596008E24BE /* Day24CombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3041F2C2B0596008E24BE /* Day24CombineApp.swift */; };
+		F1A304222C2B0596008E24BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A304212C2B0596008E24BE /* ContentView.swift */; };
+		F1A304242C2B0598008E24BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A304232C2B0598008E24BE /* Assets.xcassets */; };
+		F1A304272C2B0598008E24BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A304262C2B0598008E24BE /* Preview Assets.xcassets */; };
+		F1A304312C2B0598008E24BE /* Day24CombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A304302C2B0598008E24BE /* Day24CombineTests.swift */; };
+		F1A3043B2C2B0598008E24BE /* Day24CombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3043A2C2B0598008E24BE /* Day24CombineUITests.swift */; };
+		F1A3043D2C2B0598008E24BE /* Day24CombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3043C2C2B0598008E24BE /* Day24CombineUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1A3042D2C2B0598008E24BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A304142C2B0596008E24BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A3041B2C2B0596008E24BE;
+			remoteInfo = Day24Combine;
+		};
+		F1A304372C2B0598008E24BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A304142C2B0596008E24BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A3041B2C2B0596008E24BE;
+			remoteInfo = Day24Combine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1A3041C2C2B0596008E24BE /* Day24Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day24Combine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A3041F2C2B0596008E24BE /* Day24CombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day24CombineApp.swift; sourceTree = "<group>"; };
+		F1A304212C2B0596008E24BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1A304232C2B0598008E24BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1A304262C2B0598008E24BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1A3042C2C2B0598008E24BE /* Day24CombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day24CombineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A304302C2B0598008E24BE /* Day24CombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day24CombineTests.swift; sourceTree = "<group>"; };
+		F1A304362C2B0598008E24BE /* Day24CombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day24CombineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A3043A2C2B0598008E24BE /* Day24CombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day24CombineUITests.swift; sourceTree = "<group>"; };
+		F1A3043C2C2B0598008E24BE /* Day24CombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day24CombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1A304192C2B0596008E24BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A304292C2B0598008E24BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A304332C2B0598008E24BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1A304132C2B0596008E24BE = {
+			isa = PBXGroup;
+			children = (
+				F1A3041E2C2B0596008E24BE /* Day24Combine */,
+				F1A3042F2C2B0598008E24BE /* Day24CombineTests */,
+				F1A304392C2B0598008E24BE /* Day24CombineUITests */,
+				F1A3041D2C2B0596008E24BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1A3041D2C2B0596008E24BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1A3041C2C2B0596008E24BE /* Day24Combine.app */,
+				F1A3042C2C2B0598008E24BE /* Day24CombineTests.xctest */,
+				F1A304362C2B0598008E24BE /* Day24CombineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1A3041E2C2B0596008E24BE /* Day24Combine */ = {
+			isa = PBXGroup;
+			children = (
+				F1A3041F2C2B0596008E24BE /* Day24CombineApp.swift */,
+				F1A304212C2B0596008E24BE /* ContentView.swift */,
+				F1A304232C2B0598008E24BE /* Assets.xcassets */,
+				F1A304252C2B0598008E24BE /* Preview Content */,
+			);
+			path = Day24Combine;
+			sourceTree = "<group>";
+		};
+		F1A304252C2B0598008E24BE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1A304262C2B0598008E24BE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1A3042F2C2B0598008E24BE /* Day24CombineTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A304302C2B0598008E24BE /* Day24CombineTests.swift */,
+			);
+			path = Day24CombineTests;
+			sourceTree = "<group>";
+		};
+		F1A304392C2B0598008E24BE /* Day24CombineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A3043A2C2B0598008E24BE /* Day24CombineUITests.swift */,
+				F1A3043C2C2B0598008E24BE /* Day24CombineUITestsLaunchTests.swift */,
+			);
+			path = Day24CombineUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1A3041B2C2B0596008E24BE /* Day24Combine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A304402C2B0598008E24BE /* Build configuration list for PBXNativeTarget "Day24Combine" */;
+			buildPhases = (
+				F1A304182C2B0596008E24BE /* Sources */,
+				F1A304192C2B0596008E24BE /* Frameworks */,
+				F1A3041A2C2B0596008E24BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Day24Combine;
+			productName = Day24Combine;
+			productReference = F1A3041C2C2B0596008E24BE /* Day24Combine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1A3042B2C2B0598008E24BE /* Day24CombineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A304432C2B0598008E24BE /* Build configuration list for PBXNativeTarget "Day24CombineTests" */;
+			buildPhases = (
+				F1A304282C2B0598008E24BE /* Sources */,
+				F1A304292C2B0598008E24BE /* Frameworks */,
+				F1A3042A2C2B0598008E24BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A3042E2C2B0598008E24BE /* PBXTargetDependency */,
+			);
+			name = Day24CombineTests;
+			productName = Day24CombineTests;
+			productReference = F1A3042C2C2B0598008E24BE /* Day24CombineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1A304352C2B0598008E24BE /* Day24CombineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A304462C2B0598008E24BE /* Build configuration list for PBXNativeTarget "Day24CombineUITests" */;
+			buildPhases = (
+				F1A304322C2B0598008E24BE /* Sources */,
+				F1A304332C2B0598008E24BE /* Frameworks */,
+				F1A304342C2B0598008E24BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A304382C2B0598008E24BE /* PBXTargetDependency */,
+			);
+			name = Day24CombineUITests;
+			productName = Day24CombineUITests;
+			productReference = F1A304362C2B0598008E24BE /* Day24CombineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1A304142C2B0596008E24BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F1A3041B2C2B0596008E24BE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F1A3042B2C2B0598008E24BE = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F1A3041B2C2B0596008E24BE;
+					};
+					F1A304352C2B0598008E24BE = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F1A3041B2C2B0596008E24BE;
+					};
+				};
+			};
+			buildConfigurationList = F1A304172C2B0596008E24BE /* Build configuration list for PBXProject "Day24Combine" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1A304132C2B0596008E24BE;
+			productRefGroup = F1A3041D2C2B0596008E24BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1A3041B2C2B0596008E24BE /* Day24Combine */,
+				F1A3042B2C2B0598008E24BE /* Day24CombineTests */,
+				F1A304352C2B0598008E24BE /* Day24CombineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1A3041A2C2B0596008E24BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A304272C2B0598008E24BE /* Preview Assets.xcassets in Resources */,
+				F1A304242C2B0598008E24BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A3042A2C2B0598008E24BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A304342C2B0598008E24BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1A304182C2B0596008E24BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A304222C2B0596008E24BE /* ContentView.swift in Sources */,
+				F1A304202C2B0596008E24BE /* Day24CombineApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A304282C2B0598008E24BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A304312C2B0598008E24BE /* Day24CombineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A304322C2B0598008E24BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A3043B2C2B0598008E24BE /* Day24CombineUITests.swift in Sources */,
+				F1A3043D2C2B0598008E24BE /* Day24CombineUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1A3042E2C2B0598008E24BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A3041B2C2B0596008E24BE /* Day24Combine */;
+			targetProxy = F1A3042D2C2B0598008E24BE /* PBXContainerItemProxy */;
+		};
+		F1A304382C2B0598008E24BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A3041B2C2B0596008E24BE /* Day24Combine */;
+			targetProxy = F1A304372C2B0598008E24BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1A3043E2C2B0598008E24BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1A3043F2C2B0598008E24BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1A304412C2B0598008E24BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Day24Combine/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day24Combine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1A304422C2B0598008E24BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Day24Combine/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day24Combine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1A304442C2B0598008E24BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day24CombineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day24Combine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Day24Combine";
+			};
+			name = Debug;
+		};
+		F1A304452C2B0598008E24BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day24CombineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day24Combine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Day24Combine";
+			};
+			name = Release;
+		};
+		F1A304472C2B0598008E24BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day24CombineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Day24Combine;
+			};
+			name = Debug;
+		};
+		F1A304482C2B0598008E24BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day24CombineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Day24Combine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1A304172C2B0596008E24BE /* Build configuration list for PBXProject "Day24Combine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A3043E2C2B0598008E24BE /* Debug */,
+				F1A3043F2C2B0598008E24BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A304402C2B0598008E24BE /* Build configuration list for PBXNativeTarget "Day24Combine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A304412C2B0598008E24BE /* Debug */,
+				F1A304422C2B0598008E24BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A304432C2B0598008E24BE /* Build configuration list for PBXNativeTarget "Day24CombineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A304442C2B0598008E24BE /* Debug */,
+				F1A304452C2B0598008E24BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A304462C2B0598008E24BE /* Build configuration list for PBXNativeTarget "Day24CombineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A304472C2B0598008E24BE /* Debug */,
+				F1A304482C2B0598008E24BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1A304142C2B0596008E24BE /* Project object */;
+}

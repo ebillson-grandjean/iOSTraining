@@ -15,6 +15,7 @@
 		F13545FB2C29D5AE003EBCFE /* Day23SwiftUIAppleMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13545FA2C29D5AE003EBCFE /* Day23SwiftUIAppleMapUITests.swift */; };
 		F13545FD2C29D5AE003EBCFE /* Day23SwiftUIAppleMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13545FC2C29D5AE003EBCFE /* Day23SwiftUIAppleMapUITestsLaunchTests.swift */; };
 		F135460A2C29D868003EBCFE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13546092C29D868003EBCFE /* LocationManager.swift */; };
+		F1A304122C2AFB97008E24BE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A304112C2AFB97008E24BE /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		F13545FA2C29D5AE003EBCFE /* Day23SwiftUIAppleMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day23SwiftUIAppleMapUITests.swift; sourceTree = "<group>"; };
 		F13545FC2C29D5AE003EBCFE /* Day23SwiftUIAppleMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day23SwiftUIAppleMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F13546092C29D868003EBCFE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F1A304112C2AFB97008E24BE /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				F13545E32C29D5AE003EBCFE /* Assets.xcassets */,
 				F13545E52C29D5AE003EBCFE /* Preview Content */,
 				F13546092C29D868003EBCFE /* LocationManager.swift */,
+				F1A304112C2AFB97008E24BE /* Place.swift */,
 			);
 			path = Day23SwiftUIAppleMap;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				F13545E22C29D5AC003EBCFE /* ContentView.swift in Sources */,
 				F13545E02C29D5AC003EBCFE /* Day23SwiftUIAppleMapApp.swift in Sources */,
 				F135460A2C29D868003EBCFE /* LocationManager.swift in Sources */,
+				F1A304122C2AFB97008E24BE /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +432,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Day23SwiftUIAppleMap/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Needs to see users location to better serve them";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Needs to see users location to better serve them";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,7 +461,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Day23SwiftUIAppleMap/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Needs to see users location to better serve them";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Needs to see users location to better serve them";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

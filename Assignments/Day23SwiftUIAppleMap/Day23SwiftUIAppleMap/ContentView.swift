@@ -15,6 +15,8 @@ struct ContentView: View {
     @StateObject var myLocationManager = LocationManager()
     
     
+    var somePlace = Place(name: "London", coordinates: CLLocationCoordinate2D(latitude: 51.50, longitude: -0.27))
+    
     var dynamicRegion: Binding<MKCoordinateRegion>? {
         guard let location = myLocationManager.currentLocation else {
             return MKCoordinateRegion.DummyDataRegion().getBindings()
@@ -30,9 +32,28 @@ struct ContentView: View {
             // Static Region
 //            Map(coordinateRegion: $staticRegion)
             
+//            if let currentRegion = dynamicRegion {
+//                
+//                Map(coordinateRegion: currentRegion)
+//            }
+            
+            
             if let currentRegion = dynamicRegion {
                 
-                Map(coordinateRegion: currentRegion)
+//                Map(coordinateRegion: currentRegion, annotationItems: [somePlace]) { place in
+//                    
+//                    // Simple Marker
+//                    MapMarker(coordinate: place.coordinates)
+//                    
+//                }
+                // Day 24
+                Map{
+                    Marker(somePlace.name, coordinate: somePlace.coordinates)
+                        .tint(.orange)
+                }.mapStyle(.standard)
+//                {
+                    
+//                }
             }
         }
         .ignoresSafeArea()

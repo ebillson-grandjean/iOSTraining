@@ -11,7 +11,7 @@ struct LoginView: View {
     @State var email: String = ""
     @State var password: String = ""
     
-//    @StateObject var loginViewModel = LoginViewModel()
+    @StateObject var loginViewModel = LoginViewModel()
     
     var body: some View {
         VStack {
@@ -73,8 +73,12 @@ struct LoginView: View {
             
             
 //            NavigationLink("LOGIN", destination: chooseDestination())
-            NavigationLink("LOGIN"){
-                MenuView()
+//            NavigationLink("LOGIN"){
+//                MenuView()
+//            }
+            
+            Button("LOGIN"){
+                
             }
 //            {
 //                if(loginViewModel.areCredentialsValid(email: email, password: email)){

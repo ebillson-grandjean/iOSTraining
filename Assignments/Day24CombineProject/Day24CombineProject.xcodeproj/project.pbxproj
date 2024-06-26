@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1A304602C2B0A7F008E24BE /* Day24CombineProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3045F2C2B0A7F008E24BE /* Day24CombineProjectApp.swift */; };
+		F1A304622C2B0A7F008E24BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A304612C2B0A7F008E24BE /* ContentView.swift */; };
+		F1A304642C2B0A81008E24BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A304632C2B0A81008E24BE /* Assets.xcassets */; };
+		F1A304672C2B0A81008E24BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A304662C2B0A81008E24BE /* Preview Assets.xcassets */; };
+		F1A304712C2B0A81008E24BE /* Day24CombineProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A304702C2B0A81008E24BE /* Day24CombineProjectTests.swift */; };
+		F1A3047B2C2B0A81008E24BE /* Day24CombineProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3047A2C2B0A81008E24BE /* Day24CombineProjectUITests.swift */; };
+		F1A3047D2C2B0A81008E24BE /* Day24CombineProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3047C2C2B0A81008E24BE /* Day24CombineProjectUITestsLaunchTests.swift */; };
+		F1A304962C2B0B30008E24BE /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A304892C2B0B30008E24BE /* School.swift */; };
+		F1A304972C2B0B30008E24BE /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3048B2C2B0B30008E24BE /* SchoolViewModel.swift */; };
+		F1A304982C2B0B30008E24BE /* SchoolDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3048D2C2B0B30008E24BE /* SchoolDetailsView.swift */; };
+		F1A304992C2B0B30008E24BE /* SchoolItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3048E2C2B0B30008E24BE /* SchoolItemView.swift */; };
+		F1A3049A2C2B0B30008E24BE /* SchoolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3048F2C2B0B30008E24BE /* SchoolListView.swift */; };
+		F1A3049B2C2B0B30008E24BE /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A304912C2B0B30008E24BE /* APIConstants.swift */; };
+		F1A3049C2C2B0B30008E24BE /* WebServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A304932C2B0B30008E24BE /* WebServiceError.swift */; };
+		F1A3049D2C2B0B30008E24BE /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A304942C2B0B30008E24BE /* WebServiceManager.swift */; };
+		F1C96F992C2B8EFF00FD9088 /* SchoolTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = F1C96F952C2B8EFF00FD9088 /* SchoolTestData.json */; };
+		F1C96F9A2C2B8EFF00FD9088 /* SchoolTestNoData.json in Resources */ = {isa = PBXBuildFile; fileRef = F1C96F962C2B8EFF00FD9088 /* SchoolTestNoData.json */; };
+		F1C96F9B2C2B8EFF00FD9088 /* SchoolTestWrongData.json in Resources */ = {isa = PBXBuildFile; fileRef = F1C96F972C2B8EFF00FD9088 /* SchoolTestWrongData.json */; };
+		F1C96F9D2C2B8F2F00FD9088 /* SchoolViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C96F9C2C2B8F2F00FD9088 /* SchoolViewModelTests.swift */; };
+		F1C96F9F2C2B8F6500FD9088 /* MockServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C96F9E2C2B8F6500FD9088 /* MockServiceManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1A3046D2C2B0A81008E24BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A304542C2B0A7F008E24BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A3045B2C2B0A7F008E24BE;
+			remoteInfo = Day24CombineProject;
+		};
+		F1A304772C2B0A81008E24BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A304542C2B0A7F008E24BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A3045B2C2B0A7F008E24BE;
+			remoteInfo = Day24CombineProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1A3045C2C2B0A7F008E24BE /* Day24CombineProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day24CombineProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A3045F2C2B0A7F008E24BE /* Day24CombineProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day24CombineProjectApp.swift; sourceTree = "<group>"; };
+		F1A304612C2B0A7F008E24BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1A304632C2B0A81008E24BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1A304662C2B0A81008E24BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1A3046C2C2B0A81008E24BE /* Day24CombineProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day24CombineProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A304702C2B0A81008E24BE /* Day24CombineProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day24CombineProjectTests.swift; sourceTree = "<group>"; };
+		F1A304762C2B0A81008E24BE /* Day24CombineProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day24CombineProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A3047A2C2B0A81008E24BE /* Day24CombineProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day24CombineProjectUITests.swift; sourceTree = "<group>"; };
+		F1A3047C2C2B0A81008E24BE /* Day24CombineProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day24CombineProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1A304892C2B0B30008E24BE /* School.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		F1A3048B2C2B0B30008E24BE /* SchoolViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
+		F1A3048D2C2B0B30008E24BE /* SchoolDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolDetailsView.swift; sourceTree = "<group>"; };
+		F1A3048E2C2B0B30008E24BE /* SchoolItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolItemView.swift; sourceTree = "<group>"; };
+		F1A3048F2C2B0B30008E24BE /* SchoolListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolListView.swift; sourceTree = "<group>"; };
+		F1A304912C2B0B30008E24BE /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		F1A304932C2B0B30008E24BE /* WebServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceError.swift; sourceTree = "<group>"; };
+		F1A304942C2B0B30008E24BE /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		F1C96F952C2B8EFF00FD9088 /* SchoolTestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SchoolTestData.json; sourceTree = "<group>"; };
+		F1C96F962C2B8EFF00FD9088 /* SchoolTestNoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SchoolTestNoData.json; sourceTree = "<group>"; };
+		F1C96F972C2B8EFF00FD9088 /* SchoolTestWrongData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SchoolTestWrongData.json; sourceTree = "<group>"; };
+		F1C96F9C2C2B8F2F00FD9088 /* SchoolViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModelTests.swift; sourceTree = "<group>"; };
+		F1C96F9E2C2B8F6500FD9088 /* MockServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1A304592C2B0A7F008E24BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A304692C2B0A81008E24BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A304732C2B0A81008E24BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1A304532C2B0A7F008E24BE = {
+			isa = PBXGroup;
+			children = (
+				F1A3045E2C2B0A7F008E24BE /* Day24CombineProject */,
+				F1A3046F2C2B0A81008E24BE /* Day24CombineProjectTests */,
+				F1A304792C2B0A81008E24BE /* Day24CombineProjectUITests */,
+				F1A3045D2C2B0A7F008E24BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1A3045D2C2B0A7F008E24BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1A3045C2C2B0A7F008E24BE /* Day24CombineProject.app */,
+				F1A3046C2C2B0A81008E24BE /* Day24CombineProjectTests.xctest */,
+				F1A304762C2B0A81008E24BE /* Day24CombineProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1A3045E2C2B0A7F008E24BE /* Day24CombineProject */ = {
+			isa = PBXGroup;
+			children = (
+				F1A304922C2B0B30008E24BE /* Constants */,
+				F1A3048A2C2B0B30008E24BE /* Models */,
+				F1A3048C2C2B0B30008E24BE /* ViewModels */,
+				F1A304902C2B0B30008E24BE /* Views */,
+				F1A304952C2B0B30008E24BE /* WebServices */,
+				F1A3045F2C2B0A7F008E24BE /* Day24CombineProjectApp.swift */,
+				F1A304612C2B0A7F008E24BE /* ContentView.swift */,
+				F1A304632C2B0A81008E24BE /* Assets.xcassets */,
+				F1A304652C2B0A81008E24BE /* Preview Content */,
+			);
+			path = Day24CombineProject;
+			sourceTree = "<group>";
+		};
+		F1A304652C2B0A81008E24BE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1A304662C2B0A81008E24BE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1A3046F2C2B0A81008E24BE /* Day24CombineProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1C96F942C2B8EE300FD9088 /* TestFiles */,
+				F1A304702C2B0A81008E24BE /* Day24CombineProjectTests.swift */,
+				F1C96F9C2C2B8F2F00FD9088 /* SchoolViewModelTests.swift */,
+				F1C96F9E2C2B8F6500FD9088 /* MockServiceManager.swift */,
+			);
+			path = Day24CombineProjectTests;
+			sourceTree = "<group>";
+		};
+		F1A304792C2B0A81008E24BE /* Day24CombineProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A3047A2C2B0A81008E24BE /* Day24CombineProjectUITests.swift */,
+				F1A3047C2C2B0A81008E24BE /* Day24CombineProjectUITestsLaunchTests.swift */,
+			);
+			path = Day24CombineProjectUITests;
+			sourceTree = "<group>";
+		};
+		F1A3048A2C2B0B30008E24BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1A304892C2B0B30008E24BE /* School.swift */,
+			);
+			name = Models;
+			path = ../../Assignment23SwiftUIMVVMSchool/Assignment23SwiftUIMVVMSchool/Models;
+			sourceTree = "<group>";
+		};
+		F1A3048C2C2B0B30008E24BE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F1A3048B2C2B0B30008E24BE /* SchoolViewModel.swift */,
+			);
+			name = ViewModels;
+			path = ../../Assignment23SwiftUIMVVMSchool/Assignment23SwiftUIMVVMSchool/ViewModels;
+			sourceTree = "<group>";
+		};
+		F1A304902C2B0B30008E24BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1A3048D2C2B0B30008E24BE /* SchoolDetailsView.swift */,
+				F1A3048E2C2B0B30008E24BE /* SchoolItemView.swift */,
+				F1A3048F2C2B0B30008E24BE /* SchoolListView.swift */,
+			);
+			name = Views;
+			path = ../../Assignment23SwiftUIMVVMSchool/Assignment23SwiftUIMVVMSchool/Views;
+			sourceTree = "<group>";
+		};
+		F1A304922C2B0B30008E24BE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F1A304912C2B0B30008E24BE /* APIConstants.swift */,
+			);
+			name = Constants;
+			path = ../../Assignment23SwiftUIMVVMSchool/Assignment23SwiftUIMVVMSchool/Constants;
+			sourceTree = "<group>";
+		};
+		F1A304952C2B0B30008E24BE /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				F1A304932C2B0B30008E24BE /* WebServiceError.swift */,
+				F1A304942C2B0B30008E24BE /* WebServiceManager.swift */,
+			);
+			name = WebServices;
+			path = ../../Assignment23SwiftUIMVVMSchool/Assignment23SwiftUIMVVMSchool/WebServices;
+			sourceTree = "<group>";
+		};
+		F1C96F942C2B8EE300FD9088 /* TestFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F1C96F962C2B8EFF00FD9088 /* SchoolTestNoData.json */,
+				F1C96F972C2B8EFF00FD9088 /* SchoolTestWrongData.json */,
+				F1C96F952C2B8EFF00FD9088 /* SchoolTestData.json */,
+			);
+			path = TestFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1A3045B2C2B0A7F008E24BE /* Day24CombineProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A304802C2B0A81008E24BE /* Build configuration list for PBXNativeTarget "Day24CombineProject" */;
+			buildPhases = (
+				F1A304582C2B0A7F008E24BE /* Sources */,
+				F1A304592C2B0A7F008E24BE /* Frameworks */,
+				F1A3045A2C2B0A7F008E24BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Day24CombineProject;
+			productName = Day24CombineProject;
+			productReference = F1A3045C2C2B0A7F008E24BE /* Day24CombineProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1A3046B2C2B0A81008E24BE /* Day24CombineProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A304832C2B0A81008E24BE /* Build configuration list for PBXNativeTarget "Day24CombineProjectTests" */;
+			buildPhases = (
+				F1A304682C2B0A81008E24BE /* Sources */,
+				F1A304692C2B0A81008E24BE /* Frameworks */,
+				F1A3046A2C2B0A81008E24BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A3046E2C2B0A81008E24BE /* PBXTargetDependency */,
+			);
+			name = Day24CombineProjectTests;
+			productName = Day24CombineProjectTests;
+			productReference = F1A3046C2C2B0A81008E24BE /* Day24CombineProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1A304752C2B0A81008E24BE /* Day24CombineProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A304862C2B0A81008E24BE /* Build configuration list for PBXNativeTarget "Day24CombineProjectUITests" */;
+			buildPhases = (
+				F1A304722C2B0A81008E24BE /* Sources */,
+				F1A304732C2B0A81008E24BE /* Frameworks */,
+				F1A304742C2B0A81008E24BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A304782C2B0A81008E24BE /* PBXTargetDependency */,
+			);
+			name = Day24CombineProjectUITests;
+			productName = Day24CombineProjectUITests;
+			productReference = F1A304762C2B0A81008E24BE /* Day24CombineProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1A304542C2B0A7F008E24BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F1A3045B2C2B0A7F008E24BE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F1A3046B2C2B0A81008E24BE = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F1A3045B2C2B0A7F008E24BE;
+					};
+					F1A304752C2B0A81008E24BE = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F1A3045B2C2B0A7F008E24BE;
+					};
+				};
+			};
+			buildConfigurationList = F1A304572C2B0A7F008E24BE /* Build configuration list for PBXProject "Day24CombineProject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1A304532C2B0A7F008E24BE;
+			productRefGroup = F1A3045D2C2B0A7F008E24BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1A3045B2C2B0A7F008E24BE /* Day24CombineProject */,
+				F1A3046B2C2B0A81008E24BE /* Day24CombineProjectTests */,
+				F1A304752C2B0A81008E24BE /* Day24CombineProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1A3045A2C2B0A7F008E24BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A304672C2B0A81008E24BE /* Preview Assets.xcassets in Resources */,
+				F1A304642C2B0A81008E24BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A3046A2C2B0A81008E24BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C96F9B2C2B8EFF00FD9088 /* SchoolTestWrongData.json in Resources */,
+				F1C96F9A2C2B8EFF00FD9088 /* SchoolTestNoData.json in Resources */,
+				F1C96F992C2B8EFF00FD9088 /* SchoolTestData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A304742C2B0A81008E24BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1A304582C2B0A7F008E24BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A3049D2C2B0B30008E24BE /* WebServiceManager.swift in Sources */,
+				F1A304972C2B0B30008E24BE /* SchoolViewModel.swift in Sources */,
+				F1A304992C2B0B30008E24BE /* SchoolItemView.swift in Sources */,
+				F1A304622C2B0A7F008E24BE /* ContentView.swift in Sources */,
+				F1A3049A2C2B0B30008E24BE /* SchoolListView.swift in Sources */,
+				F1A3049B2C2B0B30008E24BE /* APIConstants.swift in Sources */,
+				F1A304962C2B0B30008E24BE /* School.swift in Sources */,
+				F1A304602C2B0A7F008E24BE /* Day24CombineProjectApp.swift in Sources */,
+				F1A3049C2C2B0B30008E24BE /* WebServiceError.swift in Sources */,
+				F1A304982C2B0B30008E24BE /* SchoolDetailsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A304682C2B0A81008E24BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C96F9D2C2B8F2F00FD9088 /* SchoolViewModelTests.swift in Sources */,
+				F1C96F9F2C2B8F6500FD9088 /* MockServiceManager.swift in Sources */,
+				F1A304712C2B0A81008E24BE /* Day24CombineProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A304722C2B0A81008E24BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A3047B2C2B0A81008E24BE /* Day24CombineProjectUITests.swift in Sources */,
+				F1A3047D2C2B0A81008E24BE /* Day24CombineProjectUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1A3046E2C2B0A81008E24BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A3045B2C2B0A7F008E24BE /* Day24CombineProject */;
+			targetProxy = F1A3046D2C2B0A81008E24BE /* PBXContainerItemProxy */;
+		};
+		F1A304782C2B0A81008E24BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A3045B2C2B0A7F008E24BE /* Day24CombineProject */;
+			targetProxy = F1A304772C2B0A81008E24BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1A3047E2C2B0A81008E24BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1A3047F2C2B0A81008E24BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1A304812C2B0A81008E24BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Day24CombineProject/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day24CombineProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1A304822C2B0A81008E24BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Day24CombineProject/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day24CombineProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1A304842C2B0A81008E24BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day24CombineProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day24CombineProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Day24CombineProject";
+			};
+			name = Debug;
+		};
+		F1A304852C2B0A81008E24BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day24CombineProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day24CombineProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Day24CombineProject";
+			};
+			name = Release;
+		};
+		F1A304872C2B0A81008E24BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day24CombineProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Day24CombineProject;
+			};
+			name = Debug;
+		};
+		F1A304882C2B0A81008E24BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egj.Day24CombineProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Day24CombineProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1A304572C2B0A7F008E24BE /* Build configuration list for PBXProject "Day24CombineProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A3047E2C2B0A81008E24BE /* Debug */,
+				F1A3047F2C2B0A81008E24BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A304802C2B0A81008E24BE /* Build configuration list for PBXNativeTarget "Day24CombineProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A304812C2B0A81008E24BE /* Debug */,
+				F1A304822C2B0A81008E24BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A304832C2B0A81008E24BE /* Build configuration list for PBXNativeTarget "Day24CombineProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A304842C2B0A81008E24BE /* Debug */,
+				F1A304852C2B0A81008E24BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A304862C2B0A81008E24BE /* Build configuration list for PBXNativeTarget "Day24CombineProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A304872C2B0A81008E24BE /* Debug */,
+				F1A304882C2B0A81008E24BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1A304542C2B0A7F008E24BE /* Project object */;
+}
