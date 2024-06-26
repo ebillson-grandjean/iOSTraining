@@ -166,7 +166,7 @@ final class PlanetViewModelTests: XCTestCase {
             let planetList = self.planetViewModel.planetArray
             XCTAssertEqual(planetList.count, 1)
             
-            let planet = planetList.
+            let planet = planetList.first
             XCTAssertEqual(planet?.name, "Alderaan")
             XCTAssertEqual(planet?.climate, "temperate")
             XCTAssertEqual(planet?.population, "2000000000")
