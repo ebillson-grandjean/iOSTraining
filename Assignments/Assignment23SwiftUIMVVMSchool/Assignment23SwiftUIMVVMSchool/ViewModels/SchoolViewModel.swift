@@ -32,7 +32,7 @@ class SchoolViewModel: ObservableObject {
 
 
 //    @MainActor
-    func getSchoolList(urlString: String) {
+    func getSchoolList(urlString: String) async {
         guard let url = URL(string: urlString) else {
             customError = WebServiceError.invalidURL
             hasErrorOccured = true
