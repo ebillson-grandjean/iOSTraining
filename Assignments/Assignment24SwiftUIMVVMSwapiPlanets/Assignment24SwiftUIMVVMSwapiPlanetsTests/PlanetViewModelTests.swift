@@ -22,7 +22,7 @@ final class PlanetViewModelTests: XCTestCase {
         planetViewModel = nil
     }
 
-    func testGetSchoolList_WhenExpecting_CorrectData() {
+    func testGetPlanet_WhenExpecting_CorrectData() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
@@ -55,7 +55,7 @@ final class PlanetViewModelTests: XCTestCase {
         wait(for: [expectation], timeout: waitDuration)
     }
     
-    func testGetSchoolList_WhenEndpointIsEmpty_Expecting_NoData() {
+    func testGetPlanet_WhenEndpointIsEmpty_Expecting_NoData() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
@@ -85,7 +85,7 @@ final class PlanetViewModelTests: XCTestCase {
         wait(for: [expectation])
     }
     
-    func testGetSchoolList_WhenEndpointHasWrongData_Expecting_ParsingError() {
+    func testGetPlanet_WhenEndpointHasWrongData_Expecting_ParsingError() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
@@ -117,7 +117,7 @@ final class PlanetViewModelTests: XCTestCase {
     }
 
     
-    func testGetSchoolList_WhenEndpointIsWrong_Expecting_NoData() {
+    func testGetPlanetList_WhenEndpointIsWrong_Expecting_NoData() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
@@ -140,6 +140,39 @@ final class PlanetViewModelTests: XCTestCase {
             
             XCTAssertEqual(error, WebServiceError.noData)
             XCTAssertTrue(self.planetViewModel.hasErrorOccured)
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation])
+    }
+    
+    
+    func testFilterPlanet_WhenEndpointIsWrong_Expecting_SpecificData() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // Any test you write for XCTest can be annotated as throws and async.
+        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
+        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        
+        // When
+        planetViewModel.filterPlanetList(searchText: "Alderaan")
+        let expectation = XCTestExpectation(description: "When endpoint is correct, expecting specific data")
+        
+        let waitDuration = 2.0
+        
+        // Then
+        DispatchQueue.main.asyncAfter(deadline: .now() + waitDuration) {
+            XCTAssertNotNil(self.planetViewModel)
+            let planetList = self.planetViewModel.planetArray
+            XCTAssertEqual(planetList.count, 1)
+            
+            let planet = planetList.
+            XCTAssertEqual(planet?.name, "Alderaan")
+            XCTAssertEqual(planet?.climate, "temperate")
+            XCTAssertEqual(planet?.population, "2000000000")
+            
+            XCTAssertNil(self.planetViewModel.customError)
+            XCTAssertFalse(self.planetViewModel.hasErrorOccured)
             expectation.fulfill()
         }
         
