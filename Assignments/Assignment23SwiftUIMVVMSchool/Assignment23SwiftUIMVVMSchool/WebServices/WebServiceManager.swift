@@ -26,7 +26,7 @@ import Combine
 
 
  extension WebServiceManager: WebServiceActions {
-
+     
      func getDataFromWebService<T: Decodable>(url: URL, modelType: T.Type) -> AnyPublisher<T, Error> {
 
 

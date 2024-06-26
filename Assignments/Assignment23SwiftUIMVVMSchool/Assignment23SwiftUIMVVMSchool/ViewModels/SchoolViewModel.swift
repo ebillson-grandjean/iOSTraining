@@ -22,6 +22,8 @@ class SchoolViewModel: ObservableObject {
     @Published var hasErrorOccured = false
     
     var webServiceManager: WebServiceActions
+    var cancellable = Set<AnyCancellable>()
+
 
     init(webServiceManager: WebServiceActions){
         self.webServiceManager = webServiceManager
@@ -29,40 +31,40 @@ class SchoolViewModel: ObservableObject {
 
 
 
-    @MainActor
-    func getSchoolList(urlString: String) async {
+//    @MainActor
+    func getSchoolList(urlString: String) {
         guard let url = URL(string: urlString) else {
             customError = WebServiceError.invalidURL
             hasErrorOccured = true
             return
         }
 
-        guard let url = URL(string: urlString) else {
-                    customError = WebServiceError.invalidURL
-                    hasErrorOccured = true
-                    return
-                }
-                
-                do {
-                    schoolArray = try await self.webServiceManager.getDataFromWebService(url: url, modelType: [School].self)
-                    print(schoolArray)
-                }catch {
-                    hasErrorOccured = true
-                    print(error.localizedDescription)
+        self.webServiceManager.getDataFromWebService(url: url, modelType: [School].self)
+            .receive(on: RunLoop.main)
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    print("Finished")
+                case .failure(let error):
+                    self.hasErrorOccured = true
                     switch error {
-                    case is DecodingError:
-                        customError = WebServiceError.parsingError
-                    case is URLError:
-                        customError = WebServiceError.invalidURL
-                    case WebServiceError.parsingError:
-                        customError = WebServiceError.parsingError
-                    case WebServiceError.invalidResponse(let code):
-                        customError = WebServiceError.invalidResponse(code)
-                    default:
-                        customError = WebServiceError.noData
+                        case is DecodingError:
+                            self.customError = WebServiceError.parsingError
+                        case is URLError:
+                            self.customError = WebServiceError.invalidURL
+                        case WebServiceError.parsingError:
+                            self.customError = WebServiceError.parsingError
+                        case WebServiceError.invalidResponse(let code):
+                            self.customError = WebServiceError.invalidResponse(code)
+                        default:
+                            self.customError = WebServiceError.noData
                     }
-                    
                 }
+
+            } receiveValue: { list in
+                self.schoolArray = list.sorted(by: {$0.school_name < $1.school_name})
+                self.originalArray = self.schoolArray
+            }.store(in: &cancellable)
     }
 }
 
