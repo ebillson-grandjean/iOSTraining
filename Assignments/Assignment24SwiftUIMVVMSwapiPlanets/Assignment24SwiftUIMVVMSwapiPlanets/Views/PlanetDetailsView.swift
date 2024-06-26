@@ -31,7 +31,7 @@ struct PlanetDetailsView: View {
                 .padding(.bottom, 16)
                 
                 
-                VStack(alignment: .leading){
+                VStack(alignment: .leading, spacing: 10){
                     
                     HStack{
                         Text("Rotation Period: ")
@@ -117,22 +117,30 @@ struct PlanetDetailsView: View {
                             .font(.title3)
                             .bold()
                         
-                        Text(planet.residents.description)
+                        List(planet.residents, id: \.self){ resident in
+                            
+                            Text(resident)
                             .font(.title3)
                             .foregroundStyle(.gray)
+                        }
+                        .frame(height: 64 * CGFloat((planet.residents.count)))
+                            
                     }
                     
                     
                     HStack{
+                        
                         Text("Films: ")
                             .font(.title3)
                             .bold()
                         
-                        Text(planet.films.description)
+                        List(planet.films, id: \.self){ film in
+                            Text(film)
                             .font(.title3)
                             .foregroundStyle(.gray)
+                        }
+                        .frame(height: 64 * CGFloat((planet.films.count)))
                     }
-                    
                     
                     HStack{
                         Text("Creation: ")
@@ -163,9 +171,6 @@ struct PlanetDetailsView: View {
                             .font(.title3)
                             .foregroundStyle(.gray)
                     }
-                    
-                    
-                    
                     
                 }
                 .padding(.leading, 2)

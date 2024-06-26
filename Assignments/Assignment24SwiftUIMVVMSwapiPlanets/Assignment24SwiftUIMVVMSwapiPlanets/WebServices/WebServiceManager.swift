@@ -31,6 +31,7 @@ import Combine
 
 
          return self.urlSession.dataTaskPublisher(for: url)
+             .delay(for: .seconds(5), scheduler: RunLoop.main)
              .map{$0.data} // {data, response}
              .decode(type: modelType, decoder: JSONDecoder()) // parsing
              .eraseToAnyPublisher()

@@ -29,6 +29,7 @@ class PlanetViewModel: ObservableObject {
     }
 
     func cancelOnGoingRequest(){
+        print("Cancelling request...")
         cancellable.first?.cancel()
     }
 
@@ -76,7 +77,7 @@ extension PlanetViewModel: PlanetViewModelActions { // Open-close principle
         if searchText.isEmpty {
             planetArray = self.planetOriginalArray
         } else {
-            planetArray = self.planetArray.filter { planet in
+            planetArray = self.planetOriginalArray.filter { planet in
                 return planet.name.localizedCaseInsensitiveContains(searchText)
             }
         }

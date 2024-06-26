@@ -154,14 +154,19 @@ final class PlanetViewModelTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
         
-        // When
-        planetViewModel.filterPlanetList(searchText: "Alderaan")
         let expectation = XCTestExpectation(description: "When endpoint is correct, expecting specific data")
-        
         let waitDuration = 2.0
         
-        // Then
+        
+        // When
+        
+        planetViewModel.getPlanetList(urlString: "PlanetTestData")
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + waitDuration) {
+
+            self.planetViewModel.filterPlanetList(searchText: "Alderaan")
+    
+        // Then
             XCTAssertNotNil(self.planetViewModel)
             let planetList = self.planetViewModel.planetArray
             XCTAssertEqual(planetList.count, 1)
