@@ -61,11 +61,9 @@ struct SchoolListView: View {
                 }
             }
             .task {
-                await
                 schoolViewModel.getSchoolList(urlString: APIConstants.baseURL + APIConstants.schoolsEndpoint)
             }
             .refreshable {
-                await
                 schoolViewModel.getSchoolList(urlString: APIConstants.baseURL + APIConstants.schoolsEndpoint)
             }
             .searchable(text: $searchedText)
