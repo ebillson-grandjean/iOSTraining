@@ -18,21 +18,21 @@ struct Product: Decodable {
     
     let id: Int
     let title, description: String
-    let category: Category
+    let category: String //
     let price, discountPercentage, rating: Double
     let stock: Int
     let tags: [String]
     let brand: String?
-    let sku: String
-    let weight: Int
-    let dimensions: Dimensions
-    let warrantyInformation, shippingInformation: String
-    let availabilityStatus: AvailabilityStatus
-    let reviews: [Review]
-    let returnPolicy: ReturnPolicy
-    let minimumOrderQuantity: Int
-    let meta: Meta
-    let images: [String]
+//    let sku: String
+//    let weight: Int
+//    let dimensions: Dimensions
+//    let warrantyInformation, shippingInformation: String
+//    let availabilityStatus: String //
+//    let reviews: [Review]
+//    let returnPolicy: String //
+//    let minimumOrderQuantity: Int
+//    let meta: Meta
+//    let images: [String]
     let thumbnail: String
 }
 
@@ -78,4 +78,11 @@ struct Review: Codable {
     let comment: String
     let date: CreatedAt
     let reviewerName, reviewerEmail: String
+}
+
+
+extension Product: Identifiable {
+    var uid : UUID {
+        return UUID()
+    }
 }

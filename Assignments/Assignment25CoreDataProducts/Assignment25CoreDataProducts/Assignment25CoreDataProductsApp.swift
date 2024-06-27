@@ -13,7 +13,8 @@ struct Assignment25CoreDataProductsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            ProductListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

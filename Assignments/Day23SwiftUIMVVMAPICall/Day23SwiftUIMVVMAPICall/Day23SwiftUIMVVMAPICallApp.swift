@@ -11,7 +11,8 @@ import SwiftUI
 struct Day23SwiftUIMVVMAPICallApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            DigimonListView()
         }
     }
 }
