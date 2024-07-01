@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '17.5'
+
+target 'Day27Part2MVVMCDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Day27Part2MVVMCDemo
+  
+  pod 'SwiftLint'
+
+	
+  target 'Day27Part2MVVMCDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Day27Part2MVVMCDemoUITests' do
+    # Pods for testing
+  end
+
+
+end

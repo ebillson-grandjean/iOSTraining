@@ -20,7 +20,7 @@
 		F1B646C42C22D3F8001CC8AE /* IDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B646C32C22D3F8001CC8AE /* IDConstants.swift */; };
 		F1B646CD2C22D4F8001CC8AE /* ProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B646CC2C22D4F8001CC8AE /* ProductsResponse.swift */; };
 		F1B646CF2C22D8E1001CC8AE /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B646CE2C22D8E1001CC8AE /* APIConstants.swift */; };
-		F1B646D12C22DB22001CC8AE /* ProductsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B646D02C22DB22001CC8AE /* ProductsListTableViewController.swift */; };
+		F1B646D12C22DB22001CC8AE /* ProductListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B646D02C22DB22001CC8AE /* ProductListTableViewController.swift */; };
 		F1B646D32C22DB6D001CC8AE /* DataTransferProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B646D22C22DB6D001CC8AE /* DataTransferProtocol.swift */; };
 		F1B646D72C22DBD3001CC8AE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B646D62C22DBD3001CC8AE /* NetworkError.swift */; };
 		F1B646D92C22DC3D001CC8AE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B646D82C22DC3D001CC8AE /* NetworkManager.swift */; };
@@ -65,7 +65,7 @@
 		F1B646C32C22D3F8001CC8AE /* IDConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDConstants.swift; sourceTree = "<group>"; };
 		F1B646CC2C22D4F8001CC8AE /* ProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResponse.swift; sourceTree = "<group>"; };
 		F1B646CE2C22D8E1001CC8AE /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
-		F1B646D02C22DB22001CC8AE /* ProductsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListTableViewController.swift; sourceTree = "<group>"; };
+		F1B646D02C22DB22001CC8AE /* ProductListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewController.swift; sourceTree = "<group>"; };
 		F1B646D22C22DB6D001CC8AE /* DataTransferProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferProtocol.swift; sourceTree = "<group>"; };
 		F1B646D62C22DBD3001CC8AE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		F1B646D82C22DC3D001CC8AE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -213,7 +213,7 @@
 		F1B646CA2C22D4B0001CC8AE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F1B646D02C22DB22001CC8AE /* ProductsListTableViewController.swift */,
+				F1B646D02C22DB22001CC8AE /* ProductListTableViewController.swift */,
 				F1B646962C22D20A001CC8AE /* MenuViewController.swift */,
 			);
 			path = Controllers;
@@ -362,7 +362,7 @@
 				F1B646972C22D20A001CC8AE /* MenuViewController.swift in Sources */,
 				F1B646932C22D20A001CC8AE /* AppDelegate.swift in Sources */,
 				F1B646D92C22DC3D001CC8AE /* NetworkManager.swift in Sources */,
-				F1B646D12C22DB22001CC8AE /* ProductsListTableViewController.swift in Sources */,
+				F1B646D12C22DB22001CC8AE /* ProductListTableViewController.swift in Sources */,
 				F1B646DD2C22E325001CC8AE /* CustomProductTableViewCell.swift in Sources */,
 				F1B646CD2C22D4F8001CC8AE /* ProductsResponse.swift in Sources */,
 				F1B646DF2C22E808001CC8AE /* ProductViewModel.swift in Sources */,

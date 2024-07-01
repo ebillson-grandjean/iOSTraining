@@ -21,7 +21,7 @@ class MenuViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let productsListViewController = storyboard.instantiateViewController(identifier: IDConstants.ProductsListViewControllerID) as ProductsListTableViewController
+        let productsListViewController = storyboard.instantiateViewController(identifier: IDConstants.ProductsListViewControllerID) as ProductListTableViewController
         
         self.navigationController?.pushViewController(productsListViewController, animated: true)
     }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProductsListTableViewController: UIViewController {
+class ProductListTableViewController: UIViewController {
 
     @IBOutlet weak var productsTableView: UITableView!
     let productViewModel = ProductViewModel()
@@ -42,7 +42,7 @@ class ProductsListTableViewController: UIViewController {
 }
 
 
-extension ProductsListTableViewController: UITableViewDataSource {
+extension ProductListTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return productViewModel.products.count
     }
@@ -72,7 +72,7 @@ extension ProductsListTableViewController: UITableViewDataSource {
 
 
 
-extension ProductsListTableViewController: UITableViewDelegate {
+extension ProductListTableViewController: UITableViewDelegate {
     
     
 }
